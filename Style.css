@@ -60,3 +60,70 @@ a{
 input:checked ~ .menu-desplegable{
     display: block;
 }
+ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+.logo{
+    max-width: 3rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(226, 23, 23);
+    font-family: sans-serif;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+.abrir-menu , .cerrar-menu{
+    display: none;
+    background: rgb(228, 2, 2);
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:2950px){
+    .abrir-menu, .cerrar-menu{
+        display: block;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: red;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }   
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+}

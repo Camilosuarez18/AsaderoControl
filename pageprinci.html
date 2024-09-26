@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <title>Pagina principal</title>
+    
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="Menu">
-        <label for="menu">Menu</label>
-        <ul class="menu-desplegable">
-            <li>Ingredientes</li>
-            <li>Equipos y utensilios</li>
-            <li>Suministros</li>
-            <li>Frutas y acompañamientos</li>
+    <header>
+    
+    <button class="abrir-menu" id="abrir"><img src="imagenes/menu.png" width="40" ></button>
+    <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrar-menu">X</button>
+        <ul class="nav-list">
+            <li><a href="/ingredientes.html">Ingredientes</a></li>
+            <li><a href="">Equipos y utensilios</a></li>
+            <li><a href="">Suministros</a></li>
+            <li><a href="">Frutas y acompañamientos</a></li>
+            <li><a href="/index.HTML">Cerrar sesion</a></li>
         </ul>
     </nav>
+    <img class="logo" src="imagenes/logo.png" alt="">
+    </header>
+    <script src="main.js"></script>
 </body>
 </html>
